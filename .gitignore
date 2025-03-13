@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Local development
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Project specific
+wandb/
+outputs/
+multirun/
+img_output/
+
+# API Keys - NEVER commit these!
+api_keys.yaml
+api_keys.yml
+api_keys.json
+openaigpt/api_keys.yaml
+openaigpt/api_keys.yml
+openaigpt/api_keys.json
+
+LAT/
+
+visulize.ipynb

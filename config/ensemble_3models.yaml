@@ -1,0 +1,36 @@
+# Configuration for ensemble_3models.py
+
+defaults:
+  - _self_
+
+data:
+  batch_size: 1
+  num_samples: 100
+  output: "./LAT"
+  cle_data_path: "resources/images/bigscale"
+  tgt_data_path: "resources/images/target_images"
+
+optim:
+  alpha: 1.0
+  epsilon: 16
+  steps: 300
+
+model:
+  input_res: 224
+  use_source_crop: true
+  use_target_crop: true
+  crop_scale: [0.5, 0.9] 
+  ensemble: true
+  device: "cuda:0"  # Using GPU 1
+  backbone: ["B16", "B32", "Laion"]  # Use all models in ensemble
+
+wandb:
+  project: "local_adversarial_attack"
+  entity: ??? # fill your wandb entity
+
+blackbox:
+  model_name: "gemini"  # Can be gpt4o, claude, gemini, gpt_4v
+  batch_size: 1
+  timeout: 30
+
+attack: 'fgsm' # [fgsm, mifgsm, pgd]
