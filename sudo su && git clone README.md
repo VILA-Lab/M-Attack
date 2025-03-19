@@ -1,4 +1,4 @@
-# $M\text{-}Attack$: A Simple Baseline Achieving Over 90% Success Rate Against GPT-4.5/4o/o1
+sudo su && git clone # $M\text{-}Attack$: A Simple Baseline Achieving Over 90% Success Rate Against GPT-4.5/4o/o1
 
 [![Website](https://img.shields.io/badge/📱-website-purple)](https://vila-lab.github.io/M-Attack-Website/)
 [![Dataset](https://img.shields.io/badge/🤖-dataset-orange)](https://huggingface.co/datasets/MBZUAI-LLM/M-Attack_AdvSamples)
