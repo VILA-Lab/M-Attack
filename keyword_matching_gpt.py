@@ -272,6 +272,7 @@ def main(cfg: MainConfig):
             f"Threshold {threshold:.3f}: {success_rates[threshold]:.2%} ({success_counts[threshold]}/{total_images})"
         )
     print(f"\nResults saved to: {results_path}")
+    wandb.finish()
 
 
 if __name__ == "__main__":

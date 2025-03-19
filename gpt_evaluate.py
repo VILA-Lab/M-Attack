@@ -154,6 +154,7 @@ def main(cfg: MainConfig):
     print(f"Success rate: {success_rate:.2%} ({success_count}/{len(scores)})")
     print(f"Average similarity score: {avg_score:.4f}")
     print(f"Results saved to: {score_file}")
+    wandb.finish()
 
 
 if __name__ == "__main__":
