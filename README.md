@@ -88,6 +88,8 @@ python keyword_matching_gpt.py -m blackbox.model_name=gpt4o,claude,gemini
 
 Then you can find corresponding results in `wandb`. Below is our detailed instructions for each step. We also provide our generated adversarial samples in [Hugging Face](https://huggingface.co/datasets/MBZUAI-LLM/M-Attack_AdvSamples).
 
+> Note: to reproduce the results on Claude 3.5 Sonnet, set `model.use_target_crop=false` and `model.crop_scale=[0.5, 1.0]` in `config/ensemble_3models.yaml`.
+
 ## 1. Generate Adversarial Samples
 
 ```train
